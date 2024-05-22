@@ -12,13 +12,13 @@ The project requires an FPGA with two available pins for the UART interface. Fou
 Initially, all the digits on the display are set to 0.
 
 <p align="center">
-<img src="md_images/example_1.png" alt="Initial state of the indicator"/>
+<img src="md_images/example_1.PNG" alt="Initial state of the indicator"/>
 </p>
 
 To set the required digit on the display via UART transmission, two bytes need to be sent. The first byte should contain information about the digit number on the display. The second byte should contain the digit to display. For example, sending '23' will result in the next display output:
 
 <p align="center">
-<img src="md_images/example_2.png" alt="State when UART transmission is received"/>
+<img src="md_images/example_2.PNG" alt="State when UART transmission is received"/>
 </p>
 
 At the same time, the UART module will answer 'Ok'. In case the transmission contains the wrong data UART module will answer 'Er' which means an error in received data.
